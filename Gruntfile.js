@@ -382,8 +382,23 @@ module.exports = function (grunt) {
     },
 
     fixmyjs: {
-      app: {
-        src: '<%= yeoman.app %>/scripts/{,*/}*.js'
+      options: {
+        jshintrc: '.jshintrc',
+        indentpref: 'spaces',
+        asi: true,
+        camelcase: true,
+        quotmark: "double",
+      },
+      app:{
+        files: [
+          { 
+            expand: true, 
+            src: [
+              'app/scripts/**/*.js',
+            ], 
+            ext: '.js'
+          }
+        ]
       }
     }
   });

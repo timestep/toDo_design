@@ -1,5 +1,4 @@
-'use strict';
-
+"use strict";
 /**
  * @ngdoc function
  * @name toDoApp.controller:MainCtrl
@@ -7,11 +6,11 @@
  * # MainCtrl
  * Controller of the toDoApp
  */
-angular.module('toDoApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module("toDoApp").controller("MainCtrl", function ($scope) {
+  $scope.awesomeThings = [
+    "HTML5 Boilerplate",
+    "AngularJS",
+    "Karma"
+  ];
+  $scope.bar = "New Items"
+})
