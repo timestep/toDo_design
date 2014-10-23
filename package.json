@@ -1,6 +1,6 @@
 {
   "name": "todo",
-  "version": "0.0.0",
+  "version": "0.0.0-1",
   "dependencies": {
     "express": "^4.9.8",
     "gzippo": "^0.2.0",
@@ -41,6 +41,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
-  }
+    "test": "grunt test",
+    "start": "node app"
+  },
+  "subdomain": "timestep"
 }
