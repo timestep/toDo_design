@@ -383,9 +383,9 @@ module.exports = function (grunt) {
 
     fixmyjs: {
       app: {
-        '<%= yeoman.app %>/scripts/{,*/}*.js'
+        src: '<%= yeoman.app %>/scripts/{,*/}*.js'
       }
-    };
+    }
   });
 
 
@@ -395,7 +395,7 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
-      'fixmyjs:app'
+      'fixmyjs:app',
       'clean:server',
       'wiredep',
       'concurrent:server',
