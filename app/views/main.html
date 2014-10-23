@@ -3,6 +3,13 @@
   <div class="text">
   </div> 
   <div class="inputWindow">
-    <input type="text" placeholder="what's new?">
+    <form  ng-submit="items.push(newItem)">
+      <input type="text" placeholder="what's new?" ng-model='newItem'>
+    </form>
+  </div>
+</div>
+<div class="toDoItems">
+  <div class="items" ng-repeat='item in items track by $index'>
+    {{item}}
   </div>
 </div>

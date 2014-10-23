@@ -23,7 +23,6 @@ body{
   margin: 0;
 }
 
-
 .container{
   height: 100%;
 }
@@ -46,7 +45,7 @@ body{
 }
 
 .centerScreen{
-  z-index: 2;
+  z-index: 3;
   position:absolute;
   width:100%;
   text-align:center;
@@ -73,5 +72,12 @@ body{
   .text{
     font-size: $inputFont;
   } 
+}
+
+.toDoItems{
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  z-index: 2;
 }
 
