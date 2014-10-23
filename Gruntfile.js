@@ -379,7 +379,13 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
-    }
+    },
+
+    fixmyjs: {
+      app: {
+        '<%= yeoman.app %>/scripts/{,*/}*.js'
+      }
+    };
   });
 
 
@@ -389,6 +395,7 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
+      'fixmyjs:app'
       'clean:server',
       'wiredep',
       'concurrent:server',
