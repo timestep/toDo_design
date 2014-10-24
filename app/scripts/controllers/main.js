@@ -12,6 +12,5 @@ angular.module("toDoApp").controller("MainCtrl", function ($scope) {
     "AngularJS",
     "Karma"
   ];
-  $scope.bar = "New Items"
-  $scope.items = ["HERE","HWER"];
+  $scope.items = [];
 })

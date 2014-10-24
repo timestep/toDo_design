@@ -3,13 +3,14 @@
   <div class="text">
   </div> 
   <div class="inputWindow">
-    <form  ng-submit="items.push(newItem)">
+    <form  ng-submit="[items.push(newItem),newItem='']">
       <input type="text" placeholder="what's new?" ng-model='newItem'>
     </form>
   </div>
 </div>
 <div class="toDoItems">
   <div class="items" ng-repeat='item in items track by $index'>
-    {{item}}
+    <div class="remove" ng-click="items.splice($index,1)">X</div>
+    <div class="text">{{item}}</div>
   </div>
 </div>
